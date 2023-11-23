@@ -1,0 +1,86 @@
+body[b-s56e7ii26v] {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container[b-s56e7ii26v] {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container[b-s56e7ii26v] {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1[b-s56e7ii26v] {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label[b-s56e7ii26v] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"][b-s56e7ii26v],
+textarea[b-s56e7ii26v] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.option-input[b-s56e7ii26v] {
+    margin-bottom: 10px;
+}
+
+button[b-s56e7ii26v] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+    button:hover[b-s56e7ii26v] {
+        background-color: #0056b3;
+    }
+
+/* Styling for collapsible section */
+.collapsible[b-s56e7ii26v] {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.content[b-s56e7ii26v] {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+}

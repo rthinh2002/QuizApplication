@@ -1,0 +1,93 @@
+﻿@page "{Edit}"
+@model QuizApplication.Pages.QuizModel
+@{
+    ViewData["Title"] = "Quiz";
+}
+<head>
+    <link rel="stylesheet" href="~/css/Quiz.css">
+</head>
+
+<body>
+    <div>
+        <h1>Edit Quiz</h1>
+        <form method="post">
+            <label for="quizTitle">Quiz Title:</label>
+            <input type="text" id="quizTitle" name="Title" value="@Model.Quiz.Title" required>
+            <span asp-validation-for="@Model.Quiz.Title"></span>
+
+            <label for="quizDescription">Quiz Description:</label>
+            <textarea id="quizDescription" name="Description" rows="4" required>@Model.Quiz.Description</textarea>
+            <span asp-validation-for="@Model.Quiz.Description"></span>
+            <button type="submit">Save Quiz Detail</button>
+        </form>
+    </div>
+
+    <div>
+        <h1>Quiz Questions</h1>
+        <hr>
+        <button id="addQuestion">Add Questions</button>
+        <form method="post" id="quizForm">
+            @{
+                var index = 1;
+            }
+            <ul id="questionsList">
+                @foreach (var question in @Model.QuestionList) {
+                    <li class="quiz-container">
+                        <label>Question @index</label>
+                        <input type="text" name="Question@(index)" class="question-input" value="@question.Content" required>
+
+                        <label for="option1">Option 1:</label>
+                        <input type="text" id="option1" name="Option1_@(index)" class="option-input" value="@question.Option1" required>
+
+                        <label for="option2">Option 2:</label>
+                        <input type="text" id="option2" name="Option2_@(index)" class="option-input" value="@question.Option2" required>
+
+                        <label for="option3">Option 3:</label>
+                        <input type="text" id="option3" name="Option3_@(index)" class="option-input" value="@question.Option3" required>
+
+                        <label for="option4">Option 4:</label>
+                        <input type="text" id="option4" name="Option4_@(index)" class="option-input" value="@question.Option4" required>
+
+                        <label for="correctAnswer">Correct Answer (Enter Option Number):</label>
+                        <input type="text" id="correctAnswer" name="CorrectAnswer_@(index)" value="@question.CorrectAnswerId" required>
+                    </li>
+                    index++;
+                }
+            </ul>
+            <input type="hidden" id="questionCount" name="QuestionCount" value="@Model.QuestionList.Count" />
+            <input type="hidden" id="quizId" name="QuizId" value="@Model.QuizId" />
+            <button type="submit" asp-page-handler="SaveQuestions">Save Questions</button>
+        </form>
+    </div>
+</body>
+
+@section scripts {
+    <script>
+        document.getElementById('addQuestion').addEventListener('click', function () {
+            const questionsList = document.getElementById('questionsList');
+            const questionCountInput = document.getElementById('questionCount');
+            const newQuestionCount = parseInt(questionCountInput.value) + 1;
+            const newQuestion = document.createElement('li');
+            newQuestion.classList.add('quiz-container');
+
+            // Construct the inner HTML for the new question
+            newQuestion.innerHTML = `
+                <label>Question ${newQuestionCount}</label>
+                <input type="text" name="Question${newQuestionCount}" class="question-input" required>
+                <label for="option1">Option 1:</label>
+                <input type="text" id="option1" name="Option1_${newQuestionCount}" class="option-input" required>
+                <label for="option2">Option 2:</label>
+                <input type="text" id="option2" name="Option2_${newQuestionCount}" class="option-input" required>
+                <label for="option3">Option 3:</label>
+                <input type="text" id="option3" name="Option3_${newQuestionCount}" class="option-input" required>
+                <label for="option3">Option 4:</label>
+                <input type="text" id="option4" name="Option4_${newQuestionCount}" class="option-input" required>
+                <label for="correctAnswer">Correct Answer (Enter Option Number):</label>
+                <input type="text" id="correctAnswer" name="CorrectAnswer_${newQuestionCount}" required>
+            `;
+
+            questionsList.appendChild(newQuestion);
+            questionCountInput.value = newQuestionCount;
+        });
+    </script>
+}

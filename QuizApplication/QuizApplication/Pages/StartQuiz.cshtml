@@ -1,0 +1,58 @@
+﻿@page 
+@model QuizApplication.Pages.StartQuizModel
+@{
+    ViewData["Title"] = "Quiz";
+}
+
+<body>
+    <div class="p-5 text-center bg-body-secondary m-1 mb-3 shadow">
+        <h1 class="mb-3">@Model.Quiz.Title</h1>
+        <span asp-validation-for="@Model.Quiz.Title"></span>
+    </div>
+
+    <div class="shadow p-5 bg-body-secondary">
+        <form method="post">
+            <ul class="list-unstyled">
+                @{
+                    int index = 1;
+                }
+                @foreach (var question in Model.QuestionsList)
+                {
+                    <li class="mb-5 p-3" style="background-color: #E9ECEF">
+                        <label class="fw-bold h5">@question.Content</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="@question.Id _@index" id="Option1" value="1">
+                            <label class="form-check-label" for="Option1">
+                                @question.Option1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="@question.Id _@index" id="Option2" value="2">
+                            <label class="form-check-label" for="Option2">
+                                @question.Option2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="@question.Id _@index" id="Option3" value="3">
+                            <label class="form-check-label" for="Option3">
+                                @question.Option3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="@question.Id _@index" id="Option4" value="4">
+                            <label class="form-check-label" for="Option4">
+                                @question.Option4
+                            </label>
+                        </div>
+                        <input type="hidden" id="questionId" name="QuestionId_@index" value="@question.Id" />
+                    </li>
+                    index++;
+                }
+            </ul>
+            <input type="hidden" id="quizId" name="QuizId" value="@Model.QuizId" />
+            <div class="text-center">            
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>

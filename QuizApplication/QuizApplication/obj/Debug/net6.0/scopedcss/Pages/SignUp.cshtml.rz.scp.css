@@ -1,0 +1,51 @@
+body[b-dm7ywe3s0t] {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+}
+
+.login-container[b-dm7ywe3s0t] {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2[b-dm7ywe3s0t] {
+    text-align: center;
+}
+
+.form-group[b-dm7ywe3s0t] {
+    margin-bottom: 15px;
+}
+
+label[b-dm7ywe3s0t] {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"][b-dm7ywe3s0t],
+input[type="password"][b-dm7ywe3s0t] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[b-dm7ywe3s0t] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover[b-dm7ywe3s0t] {
+    background-color: #0056b3;
+}

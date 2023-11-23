@@ -1,0 +1,40 @@
+﻿@page 
+@model QuizApplication.Pages.ScoreBoardModel
+@{
+    ViewData["Title"] = "Score Board";
+}
+
+<body>
+    <div class="p-5 text-center bg-body-secondary m-1 mb-3 shadow">
+        <h1 class="mb-3">SCORE BOARD</h1>
+    </div>
+    <div class="p-5 mb-3 text-center shadow">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int rank = 1;
+                }
+                @foreach(var UserScore in Model.UserScoresList)
+                {
+                    <tr>
+                        <th scope="row">@rank</th>
+                        <td>@UserScore.UserName</td>
+                        <td>@UserScore.Score</td>
+                    </tr>
+                    rank++;
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <a href="/Quizzes" class="btn btn-primary btn-lg">Home Page</a>
+    </div>
+
+</body>

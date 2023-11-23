@@ -1,0 +1,23 @@
+﻿@page 
+@model QuizApplication.Pages.QuizzesModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body>
+    <div class="container">
+        <h1>List of Quizzes</h1>
+        <ul class="quiz-list">
+            @foreach (var _quiz in Model.Quizzes)
+            {
+                <li class="quiz-item">
+                    <h2>@_quiz.Title</h2>
+                    <p>@_quiz.Description</p>
+                    <a href="/Quiz/Edit?Id=@_quiz.Id">Edit Quiz</a>
+                    <a href="/StartQuiz?Id=@_quiz.Id">Start Quiz</a>
+                </li>
+            }
+        </ul>
+        <a href="/AddQuiz" class="add-quiz-button"></a>
+    </div>
+</body>

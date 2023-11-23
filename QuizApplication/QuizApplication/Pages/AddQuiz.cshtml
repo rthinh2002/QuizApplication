@@ -1,0 +1,22 @@
+﻿@page
+@model QuizApplication.Pages.AddQuizModel
+@{
+    ViewData["Title"] = "Add Quiz";
+}
+
+<body>
+    <div class="container">
+        <h1>Add Quiz</h1>
+        <!-- Add Quiz Information Section -->
+        <form method="post">
+            <label for="quizTitle">Quiz Title:</label>
+            <input type="text" id="quizTitle" name="Title" required>
+            <span asp-validation-for="@Model.Quiz.Title"></span>
+
+            <label for="quizDescription">Quiz Description:</label>
+            <textarea id="quizDescription" name="Description" rows="4" required></textarea>         
+            <span asp-validation-for="@Model.Quiz.Description"></span>
+            <button type="submit">Create Quiz</button>
+        </form>
+    </div>
+</body>

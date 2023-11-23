@@ -1,0 +1,75 @@
+body[b-ptd498blgx] {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container[b-ptd498blgx] {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1[b-ptd498blgx] {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label[b-ptd498blgx] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"][b-ptd498blgx],
+textarea[b-ptd498blgx] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.option-input[b-ptd498blgx] {
+    margin-bottom: 10px;
+}
+
+button[b-ptd498blgx] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover[b-ptd498blgx] {
+    background-color: #0056b3;
+}
+
+/* Styling for collapsible section */
+.collapsible[b-ptd498blgx] {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.content[b-ptd498blgx] {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+}

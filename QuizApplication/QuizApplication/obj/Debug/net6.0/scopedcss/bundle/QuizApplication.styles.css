@@ -1,0 +1,395 @@
+/* _content/QuizApplication/Pages/AddQuiz.cshtml.rz.scp.css */
+body[b-ptd498blgx] {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container[b-ptd498blgx] {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1[b-ptd498blgx] {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label[b-ptd498blgx] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"][b-ptd498blgx],
+textarea[b-ptd498blgx] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.option-input[b-ptd498blgx] {
+    margin-bottom: 10px;
+}
+
+button[b-ptd498blgx] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover[b-ptd498blgx] {
+    background-color: #0056b3;
+}
+
+/* Styling for collapsible section */
+.collapsible[b-ptd498blgx] {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.content[b-ptd498blgx] {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+}
+/* _content/QuizApplication/Pages/Index.cshtml.rz.scp.css */
+body[b-nssmm57nex] {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+}
+
+.login-container[b-nssmm57nex] {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2[b-nssmm57nex] {
+    text-align: center;
+}
+
+.form-group[b-nssmm57nex] {
+    margin-bottom: 15px;
+}
+
+label[b-nssmm57nex] {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"][b-nssmm57nex],
+input[type="password"][b-nssmm57nex] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[b-nssmm57nex] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover[b-nssmm57nex] {
+        background-color: #0056b3;
+    }
+/* _content/QuizApplication/Pages/Quiz.cshtml.rz.scp.css */
+body[b-s56e7ii26v] {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container[b-s56e7ii26v] {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container[b-s56e7ii26v] {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1[b-s56e7ii26v] {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label[b-s56e7ii26v] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"][b-s56e7ii26v],
+textarea[b-s56e7ii26v] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.option-input[b-s56e7ii26v] {
+    margin-bottom: 10px;
+}
+
+button[b-s56e7ii26v] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+    button:hover[b-s56e7ii26v] {
+        background-color: #0056b3;
+    }
+
+/* Styling for collapsible section */
+.collapsible[b-s56e7ii26v] {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.content[b-s56e7ii26v] {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+}
+/* _content/QuizApplication/Pages/Quizzes.cshtml.rz.scp.css */
+body[b-8euedypntt] {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container[b-8euedypntt] {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1[b-8euedypntt] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style for the quiz list */
+.quiz-list[b-8euedypntt] {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quiz-item[b-8euedypntt] {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-item h2[b-8euedypntt] {
+    margin-top: 0;
+}
+
+.quiz-item p[b-8euedypntt] {
+    margin-bottom: 10px;
+}
+
+.quiz-item a[b-8euedypntt] {
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.quiz-item a:hover[b-8euedypntt] {
+    background-color: #0056b3;
+}
+
+.add-quiz-button[b-8euedypntt] {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.add-quiz-button:hover[b-8euedypntt] {
+    transform: scale(1.1);
+}
+
+.add-quiz-button[b-8euedypntt]::before {
+    content: '+';
+    font-size: 50px;
+    line-height: 60px;
+}
+/* _content/QuizApplication/Pages/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-hl1pneon8a] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-hl1pneon8a] {
+  color: #0077cc;
+}
+
+.btn-primary[b-hl1pneon8a] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-hl1pneon8a], .nav-pills .show > .nav-link[b-hl1pneon8a] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-hl1pneon8a] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-hl1pneon8a] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-hl1pneon8a] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-hl1pneon8a] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-hl1pneon8a] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/QuizApplication/Pages/SignUp.cshtml.rz.scp.css */
+body[b-dm7ywe3s0t] {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+}
+
+.login-container[b-dm7ywe3s0t] {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2[b-dm7ywe3s0t] {
+    text-align: center;
+}
+
+.form-group[b-dm7ywe3s0t] {
+    margin-bottom: 15px;
+}
+
+label[b-dm7ywe3s0t] {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"][b-dm7ywe3s0t],
+input[type="password"][b-dm7ywe3s0t] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[b-dm7ywe3s0t] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover[b-dm7ywe3s0t] {
+    background-color: #0056b3;
+}
